@@ -1,0 +1,233 @@
+/* menu.css */
+:root {
+  --bg: #07111f;
+  --panel: #10243b;
+  --panel-2: #143250;
+  --gold: #ffd166;
+  --orange: #ff7b00;
+  --red: #e63946;
+  --white: #f8fbff;
+  --muted: #cfe3f4;
+  --line: rgba(255,255,255,.22);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: #000;
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+.board-screen {
+  width: 100vw;
+  height: 100vh;
+  padding: 2.2vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.6vw;
+  background:
+    radial-gradient(circle at top left, rgba(255, 209, 102, .20), transparent 32%),
+    linear-gradient(135deg, #07111f 0%, #0a1b2f 48%, #05080e 100%);
+}
+
+.menu-board {
+  min-width: 0;
+  border: .35vw solid #111;
+  border-radius: 1.2vw;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.08), transparent 18%),
+    linear-gradient(135deg, var(--panel), var(--panel-2));
+  box-shadow: 0 1vw 2.5vw rgba(0,0,0,.65);
+  padding: 1.25vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-board::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+  background-size: 3vw 3vw;
+  pointer-events: none;
+}
+
+.board-header {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1vw;
+  padding-bottom: .75vw;
+  border-bottom: .2vw solid var(--line);
+}
+
+.board-title {
+  margin: 0;
+  color: var(--gold);
+  font-size: clamp(36px, 4vw, 76px);
+  line-height: .95;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  text-shadow: .16vw .16vw 0 var(--red), .3vw .3vw .7vw rgba(0,0,0,.85);
+}
+
+.board-subtitle {
+  margin: .35vw 0 0;
+  color: var(--muted);
+  font-size: clamp(15px, 1.15vw, 28px);
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
+.menu-content {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  display: grid;
+  align-content: start;
+  gap: .55vw;
+}
+
+.menu-row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: baseline;
+  gap: .8vw;
+  padding: .32vw 0;
+  font-size: clamp(18px, 1.55vw, 36px);
+}
+
+.menu-item {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.menu-dots {
+  border-bottom: .18vw dotted rgba(255,255,255,.45);
+  transform: translateY(-.25vw);
+}
+
+.price {
+  color: var(--gold);
+  font-weight: 900;
+  min-width: 4ch;
+  text-align: right;
+}
+
+.note {
+  margin-top: .35vw;
+  color: #e8f4ff;
+  font-size: clamp(13px, .95vw, 22px);
+  opacity: .92;
+}
+
+.badge {
+  display: inline-block;
+  margin-left: .6vw;
+  padding: .18vw .55vw;
+  border-radius: 999px;
+  background: var(--orange);
+  color: #111;
+  font-weight: 900;
+  font-size: .75em;
+  vertical-align: middle;
+}
+
+.feature-box {
+  margin-top: auto;
+  border: .18vw solid rgba(255,209,102,.65);
+  background: rgba(0,0,0,.22);
+  border-radius: .85vw;
+  padding: .85vw;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: .8vw;
+  align-items: center;
+}
+
+.feature-title {
+  color: var(--gold);
+  font-weight: 900;
+  font-size: clamp(20px, 1.55vw, 36px);
+  text-transform: uppercase;
+}
+
+.feature-price {
+  font-weight: 900;
+  font-size: clamp(26px, 2vw, 44px);
+}
+
+.nav-strip {
+  position: fixed;
+  right: 1vw;
+  bottom: 1vw;
+  z-index: 10;
+  display: flex;
+  gap: .55vw;
+}
+
+.nav-strip a {
+  color: #fff;
+  text-decoration: none;
+  background: rgba(255,255,255,.16);
+  border: 1px solid rgba(255,255,255,.25);
+  padding: .5vw .75vw;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: clamp(12px, .8vw, 18px);
+}
+
+@media (max-width: 900px) {
+  body {
+    overflow: auto;
+  }
+
+  .board-screen {
+    height: auto;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    padding: 18px;
+    gap: 18px;
+  }
+
+  .menu-board {
+    min-height: 620px;
+    border-width: 4px;
+    border-radius: 14px;
+    padding: 18px;
+  }
+
+  .board-title {
+    font-size: 42px;
+  }
+
+  .menu-row {
+    font-size: 19px;
+    gap: 10px;
+  }
+
+  .nav-strip {
+    position: static;
+    justify-content: center;
+    padding: 14px;
+    background: #000;
+  }
+
+  .nav-strip a {
+    padding: 9px 12px;
+    font-size: 14px;
+  }
+}
