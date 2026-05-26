@@ -7,63 +7,133 @@
   <link rel="stylesheet" href="menu.css" />
 </head>
 <body>
-  <main class="board-screen">
-    <section class="menu-board">
-      <div class="board-header">
-        <h1 class="board-title">Breakfast Special</h1>
-        <p class="board-subtitle">Served fresh every morning</p>
+  <main class="menu-page">
+    <div class="board-label">Board 1</div>
+
+    <section class="board-grid two-by-two">
+      <div class="menu-section">
+        <h1 class="section-title">Breakfast Special</h1>
+
+        <table class="menu-table two-price">
+          <thead>
+            <tr>
+              <th></th>
+              <th class="price">Roll/Bagel</th>
+              <th class="price">Hero/Wrap</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Two Eggs</td><td class="price">2.99</td><td class="price">3.99</td></tr>
+            <tr><td>Two Eggs w/ Cheese</td><td class="price">3.99</td><td class="price">5.99</td></tr>
+            <tr><td>Two Eggs w/ Bacon &amp; Cheese</td><td class="price">6.99</td><td class="price">8.99</td></tr>
+            <tr><td>Sausage Eggs w/ Cheese</td><td class="price">6.99</td><td class="price">8.99</td></tr>
+            <tr><td>Any Meat Egg w/ Cheese</td><td class="price">6.99</td><td class="price">8.99</td></tr>
+            <tr><td>B.L.T</td><td class="price">6.99</td><td class="price">8.99</td></tr>
+            <tr><td>Grilled Cheese</td><td class="price">3.99</td><td class="price">5.99</td></tr>
+            <tr><td>Grilled Cheese w/ Bacon</td><td class="price">5.99</td><td class="price">7.99</td></tr>
+            <tr><td>Grilled Cheese w/ Any Meat</td><td class="price">5.99</td><td class="price">7.99</td></tr>
+            <tr><td>Bagel or Roll w/ Butter</td><td class="price">2.49</td><td class="price">4.49</td></tr>
+            <tr><td>Bagel w/ Cream Cheese</td><td class="price">2.99</td><td class="price">4.99</td></tr>
+            <tr><td>Bagel w/ Peanut Butter</td><td class="price">2.99</td><td class="price">4.99</td></tr>
+            <tr><td>Bagel w/ Cream Cheese &amp; Jelly</td><td class="price">3.49</td><td class="price">5.49</td></tr>
+          </tbody>
+        </table>
+
+        <h2 class="sub-title">Platters</h2>
+        <table class="menu-table">
+          <tbody>
+            <tr><td>Two Eggs Home Fries</td><td class="price">6.99</td></tr>
+            <tr><td>W/ Beef Bacon or Beef Sausage</td><td class="price">8.99</td></tr>
+            <tr><td>W/ Any Meat</td><td class="price">8.99</td></tr>
+            <tr><td>W/ Turkey Bacon</td><td class="price">8.99</td></tr>
+          </tbody>
+        </table>
       </div>
 
-      <div class="menu-content">
-        <div class="menu-row"><span class="menu-item">Two Eggs</span><span class="menu-dots"></span><span class="price">$5.99</span></div>
-        <div class="menu-row"><span class="menu-item">Two Eggs w/ Cheese</span><span class="menu-dots"></span><span class="price">$6.99</span></div>
-        <div class="menu-row"><span class="menu-item">Two Eggs w/ Bacon & Cheese</span><span class="menu-dots"></span><span class="price">$8.99</span></div>
-        <div class="menu-row"><span class="menu-item">Sausage, Egg & Cheese</span><span class="menu-dots"></span><span class="price">$8.99</span></div>
-        <div class="menu-row"><span class="menu-item">Turkey Bacon, Egg & Cheese</span><span class="menu-dots"></span><span class="price">$8.99</span></div>
-        <div class="menu-row"><span class="menu-item">BLT</span><span class="menu-dots"></span><span class="price">$8.49</span></div>
-        <div class="menu-row"><span class="menu-item">Grilled Cheese</span><span class="menu-dots"></span><span class="price">$5.99</span></div>
-        <div class="menu-row"><span class="menu-item">Bagel w/ Cream Cheese</span><span class="menu-dots"></span><span class="price">$3.99</span></div>
-        <div class="menu-row"><span class="menu-item">Bagel w/ Butter</span><span class="menu-dots"></span><span class="price">$2.99</span></div>
+      <div class="menu-section">
+        <h1 class="section-title">Omelets Platter</h1>
+        <p class="small-note">Add Avocado $1.00</p>
 
-        <div class="feature-box">
-          <div>
-            <div class="feature-title">Breakfast Platter</div>
-            <div class="note">Two eggs, home fries, toast, and your choice of meat</div>
-          </div>
-          <div class="feature-price">$10.99</div>
-        </div>
+        <table class="menu-table">
+          <tbody>
+            <tr><td>Any Cheese Omelets</td><td class="price">5.99</td></tr>
+            <tr><td>Western Omelets</td><td class="price">6.99</td></tr>
+            <tr><td>Veggie Omelets</td><td class="price">6.99</td></tr>
+            <tr><td>Bacon Cheese Omelets</td><td class="price">7.99</td></tr>
+            <tr><td>Sausage Cheese Omelets</td><td class="price">7.99</td></tr>
+          </tbody>
+        </table>
+
+        <h2 class="sub-title">Cold Sandwiches</h2>
+        <table class="menu-table two-price">
+          <thead>
+            <tr>
+              <th></th>
+              <th class="price">Roll</th>
+              <th class="price">Hero</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Turkey</td><td class="price">7.99</td><td class="price">9.99</td></tr>
+            <tr><td>Honey Turkey</td><td class="price">7.99</td><td class="price">9.99</td></tr>
+            <tr><td>Salsalito Turkey</td><td class="price">7.99</td><td class="price">9.99</td></tr>
+            <tr><td>Chicken Breast</td><td class="price">7.99</td><td class="price">9.99</td></tr>
+            <tr><td>Beef Bologna Salami</td><td class="price">7.99</td><td class="price">9.99</td></tr>
+            <tr><td>Pastrami</td><td class="price">8.99</td><td class="price">10.99</td></tr>
+            <tr><td>Roast Beef</td><td class="price">8.99</td><td class="price">10.99</td></tr>
+            <tr><td>Tuna Salad</td><td class="price">7.99</td><td class="price">9.99</td></tr>
+            <tr><td>Chicken Salad</td><td class="price">7.99</td><td class="price">9.99</td></tr>
+            <tr><td>Make It Hot Extra</td><td class="price">1.00</td><td class="price">1.00</td></tr>
+          </tbody>
+        </table>
       </div>
-    </section>
 
-    <section class="menu-board">
-      <div class="board-header">
-        <h1 class="board-title">Omelet Platter</h1>
-        <p class="board-subtitle">All platters served with home fries & toast</p>
+      <div class="menu-section">
+        <h1 class="section-title">Hot Sandwiches</h1>
+        <p class="small-note">Add Avocado $1.00</p>
+
+        <table class="menu-table two-price">
+          <thead>
+            <tr>
+              <th></th>
+              <th class="price">Roll</th>
+              <th class="price">Hero</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Chicken Cutlet</td><td class="price">7.99</td><td class="price">9.99</td></tr>
+            <tr><td>Grilled Chicken</td><td class="price">7.99</td><td class="price">9.99</td></tr>
+            <tr><td>Chicken Parmesan</td><td class="price">8.99</td><td class="price">11.99</td></tr>
+            <tr><td>Philly Cheese Steak</td><td class="price">7.99</td><td class="price">9.99</td></tr>
+          </tbody>
+        </table>
       </div>
 
-      <div class="menu-content">
-        <div class="menu-row"><span class="menu-item">Any Cheese Omelet</span><span class="menu-dots"></span><span class="price">$8.99</span></div>
-        <div class="menu-row"><span class="menu-item">Western Omelet</span><span class="menu-dots"></span><span class="price">$10.99</span></div>
-        <div class="menu-row"><span class="menu-item">Veggie Omelet</span><span class="menu-dots"></span><span class="price">$10.99</span></div>
-        <div class="menu-row"><span class="menu-item">Bacon Cheese Omelet</span><span class="menu-dots"></span><span class="price">$10.99</span></div>
-        <div class="menu-row"><span class="menu-item">Sausage Cheese Omelet</span><span class="menu-dots"></span><span class="price">$10.99</span></div>
+      <div class="menu-section">
+        <h1 class="section-title">Burgers</h1>
+        <p class="small-note">Add Avocado $1.00</p>
 
-        <div class="board-header">
-          <h1 class="board-title" style="font-size: clamp(30px, 3vw, 58px);">Cold Sandwiches</h1>
-          <p class="board-subtitle">Roll / Hero available</p>
-        </div>
-
-        <div class="menu-row"><span class="menu-item">Turkey</span><span class="menu-dots"></span><span class="price">$7.99</span></div>
-        <div class="menu-row"><span class="menu-item">Honey Turkey</span><span class="menu-dots"></span><span class="price">$7.99</span></div>
-        <div class="menu-row"><span class="menu-item">Salami</span><span class="menu-dots"></span><span class="price">$7.99</span></div>
-        <div class="menu-row"><span class="menu-item">Roast Beef</span><span class="menu-dots"></span><span class="price">$8.99</span></div>
-        <div class="menu-row"><span class="menu-item">Tuna Salad</span><span class="menu-dots"></span><span class="price">$7.99</span></div>
+        <table class="menu-table two-price">
+          <thead>
+            <tr>
+              <th></th>
+              <th class="price">Plain</th>
+              <th class="price">Deluxe</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Hamburger</td><td class="price">6.99</td><td class="price">8.99</td></tr>
+            <tr><td>Cheeseburger</td><td class="price">7.99</td><td class="price">12.99</td></tr>
+            <tr><td>Texas Burger</td><td class="price">9.99</td><td class="price">18.99</td></tr>
+            <tr><td>Bacon Cheeseburger</td><td class="price">8.99</td><td class="price">12.99</td></tr>
+          </tbody>
+        </table>
       </div>
     </section>
   </main>
 
   <nav class="nav-strip">
-    <a href="board1.html">Board 1</a>
+    <a href="index.html">Board 1</a>
     <a href="board2.html">Board 2</a>
     <a href="board3.html">Board 3</a>
   </nav>
